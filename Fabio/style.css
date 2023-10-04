@@ -1,0 +1,103 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+:root {
+  --primaryBlack: #222831;
+  --alterBlack: #393e46;
+  --primaryWhite: #ffffff;
+  --alterWhite: #eeeeee;
+  --primaryBlue: #112d4e;
+  --alterBlue: #3f72af;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: var(--alterBlue);
+  color: var(--primaryWhite);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Ubuntu", "Segoe UI", Tahoma, Verdana, sans-serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-image: URL("assets/images/interlaced.png");
+}
+
+.borda {
+  border: 5px solid var(--primaryBlue) !important;
+  border-radius: 15px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primaryBlue);
+  text-align: center;
+}
+
+div,
+p,
+a {
+  text-align: justify;
+  font-size: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none !important;
+  cursor: pointer !important;
+}
+
+i {
+  color: var(--alterBlue);
+}
+
+@media (min-width: 1024px) {
+  body {
+    width: 85%;
+    margin: auto !important;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  main {
+    width: 75%;
+    margin: auto;
+  }
+
+  footer .socio {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+
+  footer .socio div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  footer .contatos {
+    flex-direction: row !important;
+  }
+}

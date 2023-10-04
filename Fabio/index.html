@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <link
+      rel="shortcut icon"
+      href="assets/icon/helmet.png"
+      type="image/x-icon"
+    />
+
+    <title>Bretas Construções e Reformas</title>
+  </head>
+
+  <body>
+    <header class="sticky-top">
+      <!--Menu Inicial-->
+      <div
+        class="d-flex flex-row justify-content-center align-items-center p-4 h-25 m-0"
+        style="background-color: var(--primaryBlue)"
+      >
+        <div class="w-50 text-center">
+          <img
+            src="assets/images/logo.png"
+            alt="Logo Bretas Construções e Reformas"
+            class="w-50 img-fluid rounded"
+            style="max-width: 200px"
+          />
+        </div>
+        <nav class="w-50">
+          <ul class="d-flex flex-column align-items-center p-0 m-0">
+            <li>
+              <a href="#sobreAEmpresa" style="color: var(--primaryWhite)"
+                >Sobre a empresa</a
+              >
+            </li>
+            <li class="dropdown-center">
+              <a
+                class="dropdown-toggle"
+                style="color: var(--primaryWhite)"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Serviços</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#eletrica" class="dropdown-item"
+                    >Instalação e Manutenção Elétrica</a
+                  >
+                </li>
+                <li>
+                  <a href="#hidraulica" class="dropdown-item"
+                    >Instalações Hidráulicas, Sanitárias e de Gás</a
+                  >
+                </li>
+                <li>
+                  <a href="#impermeabilização" class="dropdown-item"
+                    >Impermeabilização em Obras</a
+                  >
+                </li>
+                <li>
+                  <a href="#engenharia" class="dropdown-item"
+                    >Serviços de Engenharia</a
+                  >
+                </li>
+                <li>
+                  <a href="#instalacaoOutros" class="dropdown-item"
+                    >Instalação de Portas, Janelas...</a
+                  >
+                </li>
+                <li>
+                  <a href="#gesso" class="dropdown-item">Acabamento em Gesso</a>
+                </li>
+                <li>
+                  <a href="#pinturas" class="dropdown-item"
+                    >Serviços de Pinturas</a
+                  >
+                </li>
+                <li>
+                  <a href="#alvenaria" class="dropdown-item"
+                    >Obras de Alvenaria</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#contatos" style="color: var(--primaryWhite)">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!--Bordar Personalizada-->
+      <div style="overflow: hidden; margin-top: -10px">
+        <svg
+          preserveAspectRatio="none"
+          viewBox="0 0 1200 120"
+          xmlns="http://www.w3.org/2000/svg"
+          style="fill: #112d4e; width: 100%; height: 25px"
+        >
+          <path
+            d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
+            opacity=".25"
+          />
+          <path
+            d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
+            opacity=".5"
+          />
+          <path
+            d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z"
+          />
+        </svg>
+      </div>
+    </header>
+    <main>
+      <!--Apresentação-->
+      <section class="p-4 my-4">
+        <div class="pb-4 my-4">
+          <h1 class="mt-4">Bretas Construções e Reformas</h1>
+          <p class="text-center">
+            <strong> Engenharia que Transforma Ideias em Realidade </strong>
+          </p>
+          <p class="w-75 m-0 mx-auto text-center">
+            Somos uma empresa de engenharia comprometida com a excelência,
+            inovação e sustentabilidade. Há 8 anos no coração de Ferraz de
+            Vasconcelos, temos orgulho em oferecer soluções de engenharia de
+            alta qualidade para uma ampla variedade de projetos.
+          </p>
+        </div>
+
+        <!--Nav-->
+        <div>
+          <h2 class="mt-4">Seções do Nosso Site</h2>
+          <div class="d-flex flex-wrap justify-content-around">
+            <div class="card text-center m-1 borda" style="width: 15rem">
+              <div class="card-body">
+                <h6 class="card-title">Projetos Concluídos</h6>
+                <hr class="m-1" />
+                <p class="card-text">
+                  Nossos projetos são nossa carta de apresentação. Explore nossa
+                  galeria de projetos para ver como temos contribuído para o
+                  desenvolvimento das construções.
+                </p>
+                <a href="#projetos" class="btn btn-primary w-100">Projetos</a>
+              </div>
+            </div>
+            <div class="card text-center m-1 borda" style="width: 15rem">
+              <div class="card-body">
+                <h6 class="card-title">Serviços</h6>
+                <hr class="m-1" />
+                <p class="card-text">
+                  Oferecemos uma gama de serviços de engenharia para atender às
+                  suas necessidades. Desde planejamento até execução, somos o
+                  parceiro ideal para o seu projeto.
+                </p>
+                <a href="#servicos" class="btn btn-primary w-100">Serviços</a>
+              </div>
+            </div>
+            <div class="card text-center m-1 borda" style="width: 15rem">
+              <div class="card-body">
+                <h6 class="card-title">Identidade Empresárial</h6>
+                <hr class="m-1" />
+                <p class="card-text">
+                  Nossa missão é clara, nos guia e reflete nosso compromisso,
+                  nossa visão representa o futuro que aspiramos, enquanto os
+                  valores são os princípios nos orientam.
+                </p>
+                <a href="#sobreAEmpresa" class="btn btn-primary w-100"
+                  >Identidade</a
+                >
+              </div>
+            </div>
+            <div class="card text-center m-1 borda" style="width: 15rem">
+              <div class="card-body">
+                <h6 class="card-title">Sobre o Sócio</h6>
+                <hr class="m-1" />
+                <p class="card-text">
+                  Saiba mais sobre nossa equipe de engenheiros apaixonados e
+                  dedicados que lideram a Bretas Construções e Reformas.
+                  Descubra também onde estamos localizados.
+                </p>
+                <a href="#socio" class="btn btn-primary w-100">Sobre o Sócio</a>
+              </div>
+            </div>
+            <div class="card text-center m-1 borda" style="width: 15rem">
+              <div class="card-body">
+                <h6 class="card-title">Contato</h6>
+                <hr class="m-1" />
+                <p class="card-text">
+                  Entre em contato conosco para discutir seu próximo projeto,
+                  esclarecer dúvidas ou solicitar mais informações. Estamos
+                  sempre disponíveis para ajudar.
+                </p>
+                <a href="#contatos" class="btn btn-primary w-100">Contato</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Concluido - Projetos-->
+      <section id="projetos" class="my-4">
+        <h2 class="mx-auto">Projetos Concluídos</h2>
+        <div class="carousel px-4">
+          <div
+            id="carouselExampleCaptions"
+            class="rounded borda carousel slide w-100"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="5"
+                aria-label="Slide 6"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="6"
+                aria-label="Slide 7"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="7"
+                aria-label="Slide 8"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="assets/images/1.jpg"
+                  class="d-block w-100"
+                  alt="Foto do Projeto"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Titulo do trabalho foto 1</h5>
+                  <p class="text-center">Descricao do trabalho foto 1.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/images/2.jpg"
+                  class="d-block w-100"
+                  alt="Foto do Projeto"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Titulo do trabalho foto 2</h5>
+                  <p class="text-center">Descricao do trabalho foto 2.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/images/3.jpg"
+                  class="d-block w-100"
+                  alt="Foto do Projeto"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Titulo do trabalho foto 3</h5>
+                  <p class="text-center">Descricao do trabalho foto 3.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/images/4.jpg"
+                  class="d-block w-100"
+                  alt="Foto do Projeto"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Titulo do trabalho foto 4</h5>
+                  <p class="text-center">Descricao do trabalho foto 4.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/images/1.jpg"
+                  class="d-block w-100"
+                  alt="Foto do Projeto"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Titulo do trabalho foto 5</h5>
+                  <p class="text-center">Descricao do trabalho foto 5.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/images/2.jpg"
+                  class="d-block w-100"
+                  alt="Foto do Projeto"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Titulo do trabalho foto 6</h5>
+                  <p class="text-center">Descricao do trabalho foto 6.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/images/3.jpg"
+                  class="d-block w-100"
+                  alt="Foto do Projeto"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Titulo do trabalho foto 7</h5>
+                  <p class="text-center">Descricao do trabalho foto 7.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/images/4.jpg"
+                  class="d-block w-100"
+                  alt="Foto do Projeto"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Titulo do trabalho foto 8</h5>
+                  <p class="text-center">Descricao do trabalho foto 8.</p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!--Concluido - Servicos-->
+      <section id="servicos" class="my-4">
+        <div class="servicos p-4">
+          <h2 class="mx-auto mb-2">Serviços</h2>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header">
+                <button
+                  id="eletrica"
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <i class="bi bi-lightning-charge-fill mx-2"></i>
+                  Instalação e Manutenção Elétrica
+                </button>
+              </h4>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Instalação e manutenção elétrica confiável para residências e
+                  empresas. Realizamos instalações seguras de sistemas
+                  elétricos, como fiação e iluminação, garantindo funcionamento
+                  eficiente. Oferecemos serviços de manutenção preventiva,
+                  identificando e corrigindo problemas antes que se tornem
+                  grandes preocupações.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header">
+                <button
+                  id="hidraulica"
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <i class="bi bi-wrench-adjustable mx-2"></i>
+                  Instalações Hidráulicas, Sanitárias e de Gás
+                </button>
+              </h4>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Realizamos instalações precisas de tubulações de água, esgoto
+                  e gás, assegurando funcionamento confiável. Oferecemos
+                  serviços de manutenção preventiva, identificando e corrigindo
+                  vazamentos e bloqueios antes que se tornem grandes problemas.
+                  Conte conosco para manter seus sistemas hidráulicos e
+                  sanitários em perfeita ordem.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header">
+                <button
+                  id="impermeabilização"
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <i class="bi bi-droplet-fill mx-2"></i>
+
+                  Impermeabilização em Obras
+                </button>
+              </h4>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Realizamos a aplicação precisa de sistemas de
+                  impermeabilização para proteger estruturas contra infiltrações
+                  e danos causados pela água. Nossos serviços incluem
+                  impermeabilização de lajes e paredes, garantindo a
+                  durabilidade e a segurança das construções. Exemplos incluem a
+                  impermeabilização de terraços para evitar vazamentos e a
+                  proteção de fundações contra danos causados pela umidade.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header">
+                <button
+                  id="engenharia"
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  <i class="bi bi-house-gear-fill mx-2"></i>
+                  Serviços de Engenharia
+                </button>
+              </h4>
+              <div
+                id="collapseFour"
+                class="accordio mn-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Realizamos análises detalhadas, planejamento estratégico e
+                  execução precisa para atender às necessidades específicas de
+                  nossos clientes. Exemplos incluem consultoria em projetos de
+                  infraestrutura, gerenciamento de obras complexas e soluções de
+                  engenharia personalizadas. Com nossa experiência e compromisso
+                  com a inovação, garantimos resultados de engenharia sólidos e
+                  eficazes que impulsionam o sucesso de cada empreendimento.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header">
+                <button
+                  id="instalacaoOutros"
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  <i class="bi bi-door-closed-fill mx-2"></i>
+                  Instalação de Portas, Janelas e Outros
+                </button>
+              </h4>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Realizamos a montagem precisa de portas, janelas, tetos e
+                  outros componentes, garantindo qualidade excepcional e
+                  durabilidade. Exemplos incluem a instalação de portas de
+                  segurança para residências, janelas eficientes em termos
+                  energéticos e tetos decorativos que transformam ambientes.
+                  Contamos com a experiência necessária para tornar sua visão de
+                  espaço uma realidade sólida e funcional, com detalhes que
+                  fazem a diferença.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header">
+                <button
+                  id="gesso"
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                  aria-expanded="false"
+                  aria-controls="collapseSix"
+                >
+                  <i class="bi bi-shield-fill-check mx-2"></i>
+                  Acabamento em Gesso
+                </button>
+              </h4>
+              <div
+                id="collapseSix"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Realizamos instalações de sancas, forros, molduras e outros
+                  elementos em gesso que transformam espaços com elegância e
+                  sofisticação. Exemplos incluem a criação de sancas iluminadas
+                  para iluminação ambiente, forros acústicos que melhoram o
+                  conforto e molduras decorativas que acrescentam beleza aos
+                  interiores.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header">
+                <button
+                  id="pinturas"
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSeven"
+                  aria-expanded="false"
+                  aria-controls="collapseSeven"
+                >
+                  <i class="bi bi-hammer mx-2"></i>
+                  Serviços de Pinturas
+                </button>
+              </h4>
+              <div
+                id="collapseSeven"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Fornecemos serviços de pintura excepcionais que transformam
+                  espaços com cores e acabamentos impressionantes. Realizamos
+                  pintura interna e externa, atendendo a residências e empresas.
+                  Exemplos incluem a pintura de interiores que cria atmosferas
+                  acolhedoras, fachadas externas que proporcionam uma primeira
+                  impressão impactante e acabamentos personalizados que destacam
+                  a singularidade de cada espaço. Com nossa perícia em pintura,
+                  garantimos que sua propriedade seja uma obra-prima de cores e
+                  beleza.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header">
+                <button
+                  id="alvenaria"
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseEight"
+                  aria-expanded="false"
+                  aria-controls="collapseEight"
+                >
+                  <i class="bi bi-bricks mx-2"></i>
+                  Obras de Alvenaria
+                </button>
+              </h4>
+              <div
+                id="collapseEight"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Realizamos construções de paredes, muros, fundações e muito
+                  mais, com foco em durabilidade e resistência. Exemplos incluem
+                  a construção de muros de contenção que asseguram a
+                  estabilidade do terreno, paredes internas que dividem espaços
+                  com eficiência e fundações sólidas que sustentam edifícios com
+                  segurança.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Concluido - Missao/Visao/Valores-->
+      <section id="sobreAEmpresa" class="p-4 my-4">
+        <div class="pb-4">
+          <h3 class="mx-auto mb-0">Missão</h3>
+          <p class="m-0 px-0 pt-2">
+            Criar ambientes excepcionais, transformando visões em realidade.
+            Estamos comprometidos em oferecer serviços de construção de alta
+            qualidade, pintura, elétrica, gesso, alvenaria e muito mais, que
+            atendam às necessidades únicas de nossos clientes.
+          </p>
+        </div>
+        <div class="pb-4">
+          <h3 class="mx-auto mb-0">Visão</h3>
+          <p class="m-0 px-0 pt-2">
+            Ser a empresa de referência em construção civil, pintura e serviços
+            afins, reconhecida pela excelência e compromisso com a satisfação
+            dos clientes. Visamos crescer de forma sustentável e ser modelo de
+            responsabilidade social e ambiental.
+          </p>
+        </div>
+        <div class="pb-4">
+          <h3 class="mx-auto mb-0">Valores</h3>
+          <ul class="m-0 pt-2 px-0">
+            <li>
+              <strong>Compromisso com o Cliente</strong> - Colocamos os
+              interesses dos nossos clientes em primeiro lugar, ouvindo suas
+              necessidades e oferecendo as soluções adequadas.
+            </li>
+            <li>
+              <strong>Integridade</strong> - Agimos com integridade, mantendo
+              padrões éticos e construindo relacionamentos de confiança com
+              nossos clientes e parceiros.
+            </li>
+            <li>
+              <strong>Colaboração</strong> - Valorizamos o trabalho em equipe e
+              a colaboração com clientes, parceiros e funcionários para alcançar
+              o sucesso conjunto.
+            </li>
+            <li>
+              <strong>Segurança</strong> - Priorizamos a segurança em todos os
+              nossos projetos, garantindo um ambiente de trabalho seguro para
+              nossa equipe e clientes.
+            </li>
+            <li>
+              <strong>Excelência</strong> - Buscamos constantemente a
+              excelência, desde a qualidade dos materiais que usamos até o
+              atendimento ao cliente.
+            </li>
+            <li>
+              <strong>Sustentabilidade</strong> - Nos comprometemos em adotar
+              práticas sustentáveis em nossos projetos, minimizando nosso
+              impacto ambiental e promovendo a responsabilidade social.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <!--Bordar Personalizada-->
+      <div style="overflow: hidden">
+        <svg
+          preserveAspectRatio="none"
+          viewBox="0 0 1200 120"
+          xmlns="http://www.w3.org/2000/svg"
+          style="
+            fill: #3f72af;
+            width: 100%;
+            height: 25px;
+            transform: rotate(180deg);
+          "
+        >
+          <path
+            d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
+            opacity=".25"
+          />
+          <path
+            d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
+            opacity=".5"
+          />
+          <path
+            d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z"
+          />
+        </svg>
+      </div>
+
+      <!--Socio-->
+      <section
+        id="socio"
+        class="socio d-flex flex-column justify-content-center align-items-center"
+        style="
+          background-color: var(--alterBlue);
+          color: var(--primaryWhite);
+          margin-bottom: -25px;
+        "
+      >
+        <div class="d-flex flex-column align-items-center p-4">
+          <h3>Sócio</h3>
+          <div>
+            <img
+              src="assets/images/Fabio.jpg"
+              alt=""
+              class="borda mb-3"
+              style="width: 200px; height: 200px"
+            />
+          </div>
+          <div style="max-width: 450px">
+            <h4>Fábio Bretas</h4>
+            <p class="w-100">
+              Com mais de 10 anos de experiência no setor da construção civil,
+              sua expertise técnica e visão estratégica permite a entrega de
+              projetos de alta qualidade, dentro do prazo e do orçamento.
+            </p>
+          </div>
+        </div>
+        <div class="pb-4">
+          <div
+            class="d-flex flex-column align-items-center w-100"
+            style="aspect-ratio: 1"
+          >
+            <h3>Localização</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d117046.9492374609!2d-46.37207600000001!3d-23.542673099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1694723508891!5m2!1spt-BR!2sbr"
+              class="borda w-75"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              style="max-width: 400px; max-height: 400px; aspect-ratio: 1"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <div style="overflow: hidden; margin-bottom: -1px">
+        <svg
+          preserveAspectRatio="none"
+          viewBox="0 0 1200 120"
+          xmlns="http://www.w3.org/2000/svg"
+          style="
+            fill: #eeeeee;
+            width: 100%;
+            height: 25px;
+            transform: rotate(180deg);
+          "
+        >
+          <path
+            d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
+            opacity=".25"
+          />
+          <path
+            d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
+            opacity=".5"
+          />
+          <path
+            d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z"
+          />
+        </svg>
+      </div>
+      
+      <!--Contatos-->
+      <section
+        style="background-color: var(--alterWhite); color: var(--alterBlue)"
+      >
+        <div
+          class="contatos d-flex flex-column align-items-center justify-content-around row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 m-0 border-top"
+        >
+          <div class="d-flex align-items-center justify-content-center">
+            <img
+              src="assets/images/logo.png"
+              alt="Logo Bretas Construções e Reformas"
+              class="p-4"
+              style="width: 200px; height: 200px"
+            />
+          </div>
+          <div class="col mb-3 p-0" style="width: 40%">
+            <h5>Seções</h5>
+            <ul
+              class="nav d-flex flex-column justify-content-center align-items-center"
+            >
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="#sobreAEmpresa"
+                  class="nav-link p-0 mx-2 text-center text-muted"
+                  >Sobre</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Serviços</a>
+              </li>
+            </ul>
+          </div>
+          <div id="contatos" class="contatos col m-0">
+            <h5>Contatos</h5>
+            <ul
+              class="p-0 mx-auto d-flex flex-row justify-content-center align-items-center"
+            >
+              <li class="nav-item p-2">
+                <a
+                  href="https://api.whatsapp.com/send?phone=5511969613372"
+                  target="_blank"
+                  rel="external"
+                  class="nav-link text-muted"
+                >
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+              </li>
+              <li class="nav-item p-2">
+                <a href="#" class="nav-link p-0 text-muted">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+              <li class="nav-item p-2">
+                <a
+                  href="mailto:Fabio.bretas76@hotmail.com"
+                  class="nav-link p-0 text-muted"
+                >
+                  <i class="bi bi-envelope"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="w-25 mx-auto">
+        <div
+          class="d-flex flex-column align-items-center justify-content-center"
+        >
+          <p class="m-0">Desenvolvido por</p>
+          <p class="m-0">Guilherme Pessa</p>
+          <a href="https://github.com/GuiArmanLi" target="_blank" rel="external"
+            ><i class="bi bi-github"></i
+          ></a>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
