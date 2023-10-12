@@ -34,9 +34,8 @@
 
   <body>
     <header class="sticky-top">
-      <!--Menu Inicial-->
       <div
-        class="d-flex flex-row justify-content-center align-items-center p-4 h-25 m-0"
+        class="d-flex align-items-center p-4 m-0"
         style="background-color: var(--primaryBlue)"
       >
         <div class="w-50 text-center">
@@ -47,71 +46,27 @@
             style="max-width: 200px"
           />
         </div>
-        <nav class="w-50">
-          <ul class="d-flex flex-column align-items-center p-0 m-0">
+        <nav class="d-flex justify-content-center dropdown w-50">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Menu
+          </button>
+          <ul class="dropdown-menu">
             <li>
-              <a href="#sobreAEmpresa" style="color: var(--primaryWhite)"
+              <a class="dropdown-item" href="#identidadeEmpresarial"
                 >Sobre a empresa</a
               >
             </li>
-            <li class="dropdown-center">
-              <a
-                class="dropdown-toggle"
-                style="color: var(--primaryWhite)"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Serviços</a
-              >
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="#eletrica" class="dropdown-item"
-                    >Instalação e Manutenção Elétrica</a
-                  >
-                </li>
-                <li>
-                  <a href="#hidraulica" class="dropdown-item"
-                    >Instalações Hidráulicas, Sanitárias e de Gás</a
-                  >
-                </li>
-                <li>
-                  <a href="#impermeabilização" class="dropdown-item"
-                    >Impermeabilização em Obras</a
-                  >
-                </li>
-                <li>
-                  <a href="#engenharia" class="dropdown-item"
-                    >Serviços de Engenharia</a
-                  >
-                </li>
-                <li>
-                  <a href="#instalacaoOutros" class="dropdown-item"
-                    >Instalação de Portas, Janelas...</a
-                  >
-                </li>
-                <li>
-                  <a href="#gesso" class="dropdown-item">Acabamento em Gesso</a>
-                </li>
-                <li>
-                  <a href="#pinturas" class="dropdown-item"
-                    >Serviços de Pinturas</a
-                  >
-                </li>
-                <li>
-                  <a href="#alvenaria" class="dropdown-item"
-                    >Obras de Alvenaria</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#contatos" style="color: var(--primaryWhite)">Contato</a>
-            </li>
+            <li><a class="dropdown-item" href="#servicos">Serviços</a></li>
+            <li><a class="dropdown-item" href="#contato">Contato</a></li>
           </ul>
         </nav>
       </div>
 
-      <!--Bordar Personalizada-->
       <div style="overflow: hidden; margin-top: -10px">
         <svg
           preserveAspectRatio="none"
@@ -152,7 +107,7 @@
             class="secoes d-flex flex-column justify-content-center align-items-center my-2"
           >
             <button
-              class="btn m-1"
+              class="w-100 btn m-1"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navProjetos"
@@ -161,7 +116,7 @@
               Projetos
             </button>
             <button
-              class="btn m-1"
+              class="w-100 btn m-1"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navServicos"
@@ -170,7 +125,7 @@
               Serviços
             </button>
             <button
-              class="btn m-1"
+              class="w-100 btn m-1"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navIdentidade"
@@ -179,7 +134,7 @@
               Identidade
             </button>
             <button
-              class="btn m-1"
+              class="w-100 btn m-1"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navSocio"
@@ -188,7 +143,7 @@
               Sócio
             </button>
             <button
-              class="btn m-1"
+              class="w-100 btn m-1"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navContato"
@@ -198,7 +153,7 @@
             </button>
           </div>
 
-          <div class="w-75 mx-auto">
+          <div class="mx-auto">
             <div class="collapse" id="navProjetos">
               <div class="card card-body">
                 <p>
@@ -800,22 +755,22 @@
           </div>
           <div>
             <h4>Fábio Bretas</h4>
-            <p style="max-width: 450px">
+            <p style="max-width: 350px">
               Com mais de 10 anos de experiência no setor da construção civil,
               adquiriu expertise técnica e visão estratégica permitindo entregar
               projetos com qualidade, dentro do prazo e do orçamento.
             </p>
           </div>
         </div>
-        <div class="d-flex flex-column align-items-center">
+        <div class="d-flex flex-column align-items-center w-100">
           <h3>Localização</h3>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d117046.9492374609!2d-46.37207600000001!3d-23.542673099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1694723508891!5m2!1spt-BR!2sbr"
-            class="w-75 borda mb-4"
+            class="w-100 borda mb-4"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            style="max-width: 400px; max-height: 400px; aspect-ratio: 1"
+            style="max-width: 350px; max-height: 350px; aspect-ratio: 1"
           ></iframe>
         </div>
       </section>
