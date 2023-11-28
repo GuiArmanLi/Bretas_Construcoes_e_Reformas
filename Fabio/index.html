@@ -36,6 +36,7 @@
     <header class="sticky-top">
       <div class="d-flex justify-content-around align-items-center py-4 m-0">
         <img
+          id="home"
           src="assets/images/logo.png"
           alt="Logo Bretas Construções e Reformas"
           style="max-width: 150px"
@@ -601,8 +602,8 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div style="overflow: hidden">
+    <footer class="d-flex flex-column">
+      <div style="overflow: hidden; margin-bottom: -1px">
         <svg
           preserveAspectRatio="none"
           viewBox="0 0 1200 120"
@@ -628,39 +629,28 @@
         </svg>
       </div>
       <section
+        class="socio d-flex flex-column justify-content-between align-items-center gap-4 py-5"
         id="socio"
-        class="socio d-flex flex-column justify-content-center align-items-center py-4"
       >
         <div class="d-flex flex-column align-items-center">
-          <h3>Sócio</h3>
-          <div>
-            <img
-              src="assets/images/Fabio.jpg"
-              alt="Foto do Sócio"
-              class="borda mb-3"
-              style="width: 200px; aspect-ratio: 1"
-            />
-          </div>
-          <div>
-            <h4>Fábio Bretas</h4>
-            <p style="max-width: 350px">
-              Com mais de 10 anos de experiência no setor da construção civil,
-              adquiriu expertise técnica e visão estratégica permitindo entregar
-              projetos com qualidade, dentro do prazo e do orçamento.
-            </p>
-          </div>
+          <img
+            src="assets/images/Fabio.jpg"
+            alt="Foto do Sócio"
+            class="borda mb-2"
+          />
+          <p class="w-50">
+            <strong>Fábio Bretas</strong>: adquiriu expertise, técnica e visão
+            estratégica permitindo entregar projetos com qualidade, dentro do
+            prazo e do orçamento.
+          </p>
         </div>
-        <div class="d-flex flex-column align-items-center">
-          <h3>Localização</h3>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d117046.9492374609!2d-46.37207600000001!3d-23.542673099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1694723508891!5m2!1spt-BR!2sbr"
-            class="w-100 borda mb-4"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            style="max-width: 350px; max-height: 350px; aspect-ratio: 1"
-          ></iframe>
-        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d117046.9492374609!2d-46.37207600000001!3d-23.542673099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1694723508891!5m2!1spt-BR!2sbr"
+          class="borda"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
 
       <div style="overflow: hidden; margin-top: -25px; margin-bottom: -1px">
@@ -689,37 +679,29 @@
         </svg>
       </div>
       <section
-        class="contatos d-flex flex-column align-items-center justify-content-around p-4"
+        class="d-flex align-items-center justify-content-around gap-4 py-4"
+        id="contatos"
       >
+        <img src="assets/images/logo.png" alt="Logo da Empresa" />
         <div>
-          <img
-            src="assets/images/logo.png"
-            alt="Logo da Empresa"
-            class="p-4"
-            style="width: 200px; height: 200px"
-          />
-        </div>
-        <div class="p-0 mb-3" style="width: 40%">
           <h5>Seções</h5>
           <ul
             class="d-flex flex-column justify-content-center align-items-center p-0 m-0"
           >
-            <li class="mb-2">
-              <a href="" class="p-0 text-muted">Home</a>
+            <li>
+              <a href="#home">Home</a>
             </li>
-            <li class="mb-2">
-              <a href="#identidadeEmpresarial" class="p-0 mx-2 text-muted"
-                >Sobre a Empresa</a
-              >
+            <li>
+              <a href="#identidadeEmpresarial">Sobre a Empresa</a>
             </li>
-            <li class="mb-2">
-              <a href="#servicos" class="p-0 text-muted">Serviços</a>
+            <li>
+              <a href="#servicos">Serviços</a>
             </li>
           </ul>
         </div>
-        <div id="contatos" class="contatos m-0">
+        <div>
           <h5>Contatos</h5>
-          <ul class="d-flex justify-content-center align-items-center p-0">
+          <ul class="d-flex">
             <li class="p-2">
               <a
                 href="https://api.whatsapp.com/send?phone=5511969613372"

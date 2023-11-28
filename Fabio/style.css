@@ -29,9 +29,17 @@ body {
   color: var(--primaryWhite);
 }
 
-.contatos {
+section:last-child {
+  flex-direction: column;
   background-color: var(--alterWhite);
-  color: var(--alterBlue);
+}
+
+iframe {
+  min-width: 300px;
+  max-width: 350px;
+  max-height: 350px;
+  aspect-ratio: 1;
+  margin: 0 auto;
 }
 
 .borda {
@@ -61,6 +69,10 @@ header div:first-child {
   background-color: var(--primaryBlue) !important;
 }
 
+img {
+  aspect-ratio: 1;
+}
+
 ul {
   padding: 0 !important;
   margin: 0 !important;
@@ -71,16 +83,13 @@ li {
   list-style-type: none;
 }
 
-a {
-  color: white !important;
-}
-
 p {
   text-align: justify;
   font-size: 18px;
 }
 
 a {
+  color: red !important;
   text-decoration: none !important;
   cursor: pointer !important;
 }
@@ -127,7 +136,7 @@ i {
     width: 50% !important;
   }
 
-  footer .contatos {
-    flex-direction: row !important;
+  section:last-child {
+    flex-direction: row;
   }
 }
