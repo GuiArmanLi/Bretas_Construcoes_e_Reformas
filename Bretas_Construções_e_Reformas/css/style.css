@@ -35,8 +35,8 @@ body {
 header div:first-child {
   background-color: #112d4e; }
 header img {
-  width: 150px;
-  height: 150px; }
+  width: 100px;
+  aspect-ratio: 1; }
 header a {
   color: #eeeeee; }
 
@@ -80,7 +80,7 @@ footer section:last-child {
     width: 150px;
     aspect-ratio: 1; }
   footer section:last-child a {
-    color: #3f72af; }
+    color: #112d4e; }
 
 @media (min-width: 768px) {
   footer section:nth-child(2) {
