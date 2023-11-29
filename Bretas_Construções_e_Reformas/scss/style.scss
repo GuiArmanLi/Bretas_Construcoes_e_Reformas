@@ -26,6 +26,7 @@ body {
     color: $primaryBlue !important;
     text-align: center;
   }
+
   ul {
     padding: 0;
     margin: 0;
@@ -58,6 +59,11 @@ body {
 header {
   div:first-child {
     background-color: $primaryBlue;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
   }
 
   a {
@@ -103,6 +109,11 @@ footer {
     background-color: $alterBlue;
     color: $primaryWhite;
 
+    img {
+      width: 200px;
+      aspect-ratio: 1;
+    }
+
     iframe {
       min-width: 300px;
       max-width: 300px;
@@ -114,6 +125,11 @@ footer {
 
   section:last-child {
     background-color: $alterWhite;
+    img {
+      width: 150px;
+      aspect-ratio: 1;
+    }
+
     a {
       color: $alterBlue;
     }
