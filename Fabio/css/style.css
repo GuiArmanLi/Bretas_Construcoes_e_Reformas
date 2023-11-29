@@ -1,146 +1,91 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
-
-:root {
-  --primaryBlack: #222831;
-  --alterBlack: #393e46;
-  --primaryWhite: #ffffff;
-  --alterWhite: #eeeeee;
-  --primaryBlue: #112d4e;
-  --alterBlue: #3f72af;
-}
-
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
-html,
 body {
   width: 100%;
   height: 100%;
   font-family: "Ubuntu", "Segoe UI", Tahoma, Verdana, sans-serif;
-  background-image: URL("../assets/images/interlaced.png");
-}
+  background-image: URL("../assets/images/interlaced.png"); }
+  body h1,
+  body h2,
+  body h3,
+  body h4 {
+    color: #112d4e !important;
+    text-align: center; }
+  body ul {
+    padding: 0;
+    margin: 0; }
+    body ul li {
+      text-align: center;
+      list-style-type: none; }
+  body p {
+    text-align: justify;
+    font-size: 18px; }
+  body a {
+    text-decoration: none; }
+  body section:last-child {
+    flex-direction: column; }
+  body .borda {
+    border: 5px solid #112d4e;
+    border-radius: 15px; }
 
 header div:first-child {
-  background-color: var(--primaryBlue) !important;
-}
+  background-color: #112d4e; }
+header a {
+  color: #eeeeee; }
 
 main {
   display: flex;
   flex-direction: column;
-  gap: 75px;
+  gap: 50px;
   padding: 25px;
-  background-color: var(--primaryWhite);
-}
-
-main section:first-child p {
-  text-align: center;
-}
-
-main section:nth-child(2) {
-  max-width: 800px;
-  margin: auto;
-}
-
-main section:nth-child(2) img {
-  display: block;
-  width: 100%;
-}
-
-main section:nth-child(4) {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-section:last-child {
-  flex-direction: column;
-}
+  margin: -25px 0;
+  background-color: #ffffff; }
+  main section:first-child {
+    padding-top: 50px; }
+    main section:first-child p {
+      text-align: center; }
+  main section:nth-child(2) {
+    max-width: 800px;
+    margin: auto; }
+    main section:nth-child(2) img {
+      display: block;
+      width: 100%; }
+  main section:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; }
 
 footer section:nth-child(2) {
-  background-color: var(--alterBlue) !important;
-  color: var(--primaryWhite);
-}
-
+  background-color: #3f72af;
+  color: #ffffff; }
+  footer section:nth-child(2) iframe {
+    min-width: 300px;
+    max-width: 300px;
+    max-height: 350px;
+    aspect-ratio: 1;
+    margin: 0 auto; }
 footer section:last-child {
-  background-color: var(--alterWhite);
-}
+  background-color: #eeeeee; }
+  footer section:last-child a {
+    color: #3f72af; }
 
-.borda {
-  border: 5px solid var(--primaryBlue) !important;
-  border-radius: 15px !important;
-}
-
-.btn {
-  width: 75%;
-  border: 2px solid var(--primaryBlue) !important;
-  margin: auto;
-  background-color: var(--alterBlue) !important;
-  color: var(--primaryWhite) !important;
-}
-
-ul {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-li {
-  text-align: center !important;
-  list-style-type: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--primaryBlue);
-  text-align: center;
-}
-
-p {
-  text-align: justify;
-  font-size: 18px;
-}
-
-i {
-  color: var(--alterBlue);
-}
-iframe {
-  min-width: 300px;
-  max-width: 300px;
-  max-height: 350px;
-  aspect-ratio: 1;
-  margin: 0 auto;
-}
-
+@media (min-width: 768px) {
+  footer section:nth-child(2) {
+    flex-direction: row !important; }
+    footer section:nth-child(2) div {
+      width: 50%; }
+  footer section:last-child {
+    flex-direction: row; } }
 @media (min-width: 1024px) {
   body {
     width: 75%;
-    margin: auto !important;
-  }
+    margin: auto !important; }
 
   main {
-    padding: 150px;
-  }
+    padding: 50px 100px 100px; } }
 
-  main .secoes button {
-    width: 20%;
-  }
-
-  footer section:nth-child(2) {
-    flex-direction: row !important;
-  }
-
-  footer section:nth-child(2) div {
-    width: 50%;
-  }
-
-  footer section:last-child {
-    flex-direction: row;
-  }
-}
+/*# sourceMappingURL=style.css.map */
