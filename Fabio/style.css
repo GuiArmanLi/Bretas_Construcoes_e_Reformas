@@ -24,22 +24,48 @@ body {
   background-image: URL("assets/images/interlaced.png");
 }
 
-.socio {
-  background-color: var(--alterBlue);
-  color: var(--primaryWhite);
+header div:first-child {
+  background-color: var(--primaryBlue) !important;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+  padding: 25px;
+}
+
+main section:first-child p {
+  text-align: center;
+}
+
+main section:nth-child(2) {
+  max-width: 800px;
+  margin: auto;
+}
+
+main section:nth-child(2) img {
+  display: block;
+  width: 100%;
+}
+
+main section:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 section:last-child {
   flex-direction: column;
-  background-color: var(--alterWhite);
 }
 
-iframe {
-  min-width: 300px;
-  max-width: 350px;
-  max-height: 350px;
-  aspect-ratio: 1;
-  margin: 0 auto;
+footer section:nth-child(2) {
+  background-color: var(--alterBlue) !important;
+  color: var(--primaryWhite);
+}
+
+footer section:last-child {
+  background-color: var(--alterWhite);
 }
 
 .borda {
@@ -53,20 +79,6 @@ iframe {
   margin: auto;
   background-color: var(--alterBlue) !important;
   color: var(--primaryWhite) !important;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--primaryBlue);
-  text-align: center;
-}
-
-header div:first-child {
-  background-color: var(--primaryBlue) !important;
 }
 
 img {
@@ -83,6 +95,16 @@ li {
   list-style-type: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primaryBlue);
+  text-align: center;
+}
+
 p {
   text-align: justify;
   font-size: 18px;
@@ -97,6 +119,13 @@ a {
 i {
   color: var(--alterBlue);
 }
+iframe {
+  min-width: 300px;
+  max-width: 300px;
+  max-height: 350px;
+  aspect-ratio: 1;
+  margin: 0 auto;
+}
 
 @media (min-width: 1024px) {
   body {
@@ -104,39 +133,24 @@ i {
     margin: auto !important;
   }
 
-  header nav ul {
-    display: flex;
-    flex-direction: row;
-  }
-
   main {
     width: 75%;
     margin: auto;
-  }
-
-  main .secoes {
-    display: flex !important;
-    flex-direction: row !important;
   }
 
   main .secoes button {
     width: 20%;
   }
 
-  footer .socio {
-    display: flex !important;
+  footer section:nth-child(2) {
     flex-direction: row !important;
   }
 
-  footer .socio div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50% !important;
+  footer section:nth-child(2) div {
+    width: 50%;
   }
 
-  section:last-child {
+  footer section:last-child {
     flex-direction: row;
   }
 }

@@ -47,7 +47,7 @@
               <a href="#identidadeEmpresarial">Sobre a empresa</a>
             </li>
             <li>
-              <a href="#servicos">Serviços</a>
+              <a href="#accordionServices">Serviços</a>
             </li>
             <li>
               <a href="#contatos">Contato</a>
@@ -78,466 +78,420 @@
       </div>
     </header>
     <main>
-      <section class="p-4 m-4">
-        <div class="py-4 my-4">
-          <h1 class="m-0">Bretas Construções e Reformas</h1>
-          <p class="text-center">
-            <strong> Engenharia que Transforma Ideias em Realidade </strong>
-          </p>
-          <p class="w-100 mx-75 text-center">
-            Somos uma empresa de engenharia comprometida com a excelência,
-            inovação e sustentabilidade. Há 8 anos no coração de Ferraz de
-            Vasconcelos.
-          </p>
-        </div>
+      <section>
+        <h1>Bretas Construções e Reformas</h1>
+        <p>
+          <strong> Engenharia que Transforma Ideias em Realidade </strong>
+        </p>
+        <p>
+          Somos uma empresa de engenharia comprometida com a excelência,
+          inovação e sustentabilidade. Há 8 anos no coração de Ferraz de
+          Vasconcelos.
+        </p>
       </section>
 
-      <section id="projetos" class="my-4">
+      <section id="projetos" class="carousel">
         <h2>Projetos Concluídos</h2>
-        <div class="carousel px-4">
-          <div id="completed-projects" class="carousel slide borda rounded">
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#completed-projects"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#completed-projects"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#completed-projects"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#completed-projects"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#completed-projects"
-                data-bs-slide-to="3"
-                aria-label="Slide 4"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#completed-projects"
-                data-bs-slide-to="4"
-                aria-label="Slide 5"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#completed-projects"
-                data-bs-slide-to="5"
-                aria-label="Slide 6"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#completed-projects"
-                data-bs-slide-to="6"
-                aria-label="Slide 7"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#completed-projects"
-                data-bs-slide-to="7"
-                aria-label="Slide 8"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="assets/images/1.jpg"
-                  class="d-block w-100"
-                  alt="Foto do Projeto"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Restauração do Telhado Domiciliar</h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/images/2.jpg"
-                  class="d-block w-100"
-                  alt="Foto do Projeto"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Pintura do Posto Policial</h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/images/3.jpg"
-                  class="d-block w-100"
-                  alt="Foto do Projeto"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Pintura do Condomínio</h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/images/4.jpg"
-                  class="d-block w-100"
-                  alt="Foto do Projeto"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Pintura do Condomínio</h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/images/5.png"
-                  class="d-block w-100"
-                  alt="Foto do Projeto"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Pintura Interna da Empresa</h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/images/6.jpg"
-                  class="d-block w-100"
-                  alt="Foto do Projeto"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Pintura de Garagem</h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/images/7.jpg"
-                  class="d-block w-100"
-                  alt="Foto do Projeto"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Reforma do Telhado Residêncial</h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/images/8.jpg"
-                  class="d-block w-100"
-                  alt="Foto do Projeto"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Manutenção do Telhado Residêncial</h5>
-                </div>
-              </div>
-            </div>
+        <div id="completed-projects" class="carousel slide borda rounded">
+          <div class="carousel-indicators">
             <button
-              class="carousel-control-prev"
               type="button"
               data-bs-target="#completed-projects"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
             <button
-              class="carousel-control-next"
               type="button"
               data-bs-target="#completed-projects"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#completed-projects"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#completed-projects"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#completed-projects"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#completed-projects"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#completed-projects"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#completed-projects"
+              data-bs-slide-to="6"
+              aria-label="Slide 7"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#completed-projects"
+              data-bs-slide-to="7"
+              aria-label="Slide 8"
+            ></button>
           </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/images/1.jpg" alt="Foto do Projeto" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Restauração do Telhado Domiciliar</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/2.jpg" alt="Foto do Projeto" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Pintura do Posto Policial</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/3.jpg" alt="Foto do Projeto" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Pintura do Condomínio</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/4.jpg" alt="Foto do Projeto" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Pintura do Condomínio</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/5.png" alt="Foto do Projeto" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Pintura Interna da Empresa</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/6.jpg" alt="Foto do Projeto" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Pintura de Garagem</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/7.jpg" alt="Foto do Projeto" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Reforma do Telhado Residêncial</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/8.jpg" alt="Foto do Projeto" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Manutenção do Telhado Residêncial</h5>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#completed-projects"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#completed-projects"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </section>
 
-      <section id="servicos" class="my-4 p-4">
-        <h2 class="mb-2">Serviços</h2>
-        <div class="accordion" id="accordionServices">
-          <div class="accordion-item">
-            <h4 class="accordion-header">
-              <button
-                id="eletrica"
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                <i class="bi bi-lightning-charge-fill mx-2"></i>
-                Instalação e Manutenção Elétrica
-              </button>
-            </h4>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              data-bs-parent="#accordionServices"
+      <section id="accordionServices" class="accordion">
+        <h2>Serviços</h2>
+        <div class="accordion-item">
+          <h4 class="accordion-header">
+            <button
+              id="eletrica"
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
             >
-              <div class="accordion-body">
-                <p>
-                  Instalação e manutenção elétrica confiável para residências e
-                  empresas. Realizamos instalações seguras de sistemas
-                  elétricos, como fiação e iluminação, garantindo funcionamento
-                  eficiente. Oferecemos serviços de manutenção preventiva,
-                  identificando e corrigindo problemas antes que se tornem
-                  grandes preocupações.
-                </p>
-              </div>
+              <i class="bi bi-lightning-charge-fill mx-2"></i>
+              Instalação e Manutenção Elétrica
+            </button>
+          </h4>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionServices"
+          >
+            <div class="accordion-body">
+              <p>
+                Instalação e manutenção elétrica confiável para residências e
+                empresas. Realizamos instalações seguras de sistemas elétricos,
+                como fiação e iluminação, garantindo funcionamento eficiente.
+                Oferecemos serviços de manutenção preventiva, identificando e
+                corrigindo problemas antes que se tornem grandes preocupações.
+              </p>
             </div>
           </div>
-          <div class="accordion-item">
-            <h4 class="accordion-header">
-              <button
-                id="hidraulica"
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                <i class="bi bi-wrench-adjustable mx-2"></i>
-                Instalações Hidráulicas, Sanitárias e de Gás
-              </button>
-            </h4>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionServices"
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header">
+            <button
+              id="hidraulica"
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
             >
-              <div class="accordion-body">
-                <p>
-                  Realizamos instalações precisas de tubulações de água, esgoto
-                  e gás, assegurando funcionamento confiável. Oferecemos
-                  serviços de manutenção preventiva, identificando e corrigindo
-                  vazamentos e bloqueios antes que se tornem grandes problemas.
-                  Conte conosco para manter seus sistemas hidráulicos e
-                  sanitários em perfeita ordem.
-                </p>
-              </div>
+              <i class="bi bi-wrench-adjustable mx-2"></i>
+              Instalações Hidráulicas, Sanitárias e de Gás
+            </button>
+          </h4>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionServices"
+          >
+            <div class="accordion-body">
+              <p>
+                Realizamos instalações precisas de tubulações de água, esgoto e
+                gás, assegurando funcionamento confiável. Oferecemos serviços de
+                manutenção preventiva, identificando e corrigindo vazamentos e
+                bloqueios antes que se tornem grandes problemas. Conte conosco
+                para manter seus sistemas hidráulicos e sanitários em perfeita
+                ordem.
+              </p>
             </div>
           </div>
-          <div class="accordion-item">
-            <h4 class="accordion-header">
-              <button
-                id="impermeabilização"
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                <i class="bi bi-droplet-fill mx-2"></i>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header">
+            <button
+              id="impermeabilização"
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              <i class="bi bi-droplet-fill mx-2"></i>
 
-                Impermeabilização em Obras
-              </button>
-            </h4>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionServices"
-            >
-              <div class="accordion-body">
-                <p>
-                  Realizamos a aplicação precisa de sistemas de
-                  impermeabilização para proteger estruturas contra infiltrações
-                  e danos causados pela água. Nossos serviços incluem
-                  impermeabilização de lajes e paredes, garantindo a
-                  durabilidade e a segurança das construções. Exemplos incluem a
-                  impermeabilização de terraços para evitar vazamentos e a
-                  proteção de fundações contra danos causados pela umidade.
-                </p>
-              </div>
+              Impermeabilização em Obras
+            </button>
+          </h4>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionServices"
+          >
+            <div class="accordion-body">
+              <p>
+                Realizamos a aplicação precisa de sistemas de impermeabilização
+                para proteger estruturas contra infiltrações e danos causados
+                pela água. Nossos serviços incluem impermeabilização de lajes e
+                paredes, garantindo a durabilidade e a segurança das
+                construções. Exemplos incluem a impermeabilização de terraços
+                para evitar vazamentos e a proteção de fundações contra danos
+                causados pela umidade.
+              </p>
             </div>
           </div>
-          <div class="accordion-item">
-            <h4 class="accordion-header">
-              <button
-                id="engenharia"
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFour"
-                aria-expanded="false"
-                aria-controls="collapseFour"
-              >
-                <i class="bi bi-house-gear-fill mx-2"></i>
-                Serviços de Engenharia
-              </button>
-            </h4>
-            <div
-              id="collapseFour"
-              class="accordio mn-collapse collapse"
-              data-bs-parent="#accordionServices"
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header">
+            <button
+              id="engenharia"
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
             >
-              <div class="accordion-body">
-                <p>
-                  Realizamos análises detalhadas, planejamento estratégico e
-                  execução precisa para atender às necessidades específicas de
-                  nossos clientes. Exemplos incluem consultoria em projetos de
-                  infraestrutura, gerenciamento de obras complexas e soluções de
-                  engenharia personalizadas. Com nossa experiência e compromisso
-                  com a inovação, garantimos resultados de engenharia sólidos e
-                  eficazes que impulsionam o sucesso de cada empreendimento.
-                </p>
-              </div>
+              <i class="bi bi-house-gear-fill mx-2"></i>
+              Serviços de Engenharia
+            </button>
+          </h4>
+          <div
+            id="collapseFour"
+            class="accordio mn-collapse collapse"
+            data-bs-parent="#accordionServices"
+          >
+            <div class="accordion-body">
+              <p>
+                Realizamos análises detalhadas, planejamento estratégico e
+                execução precisa para atender às necessidades específicas de
+                nossos clientes. Exemplos incluem consultoria em projetos de
+                infraestrutura, gerenciamento de obras complexas e soluções de
+                engenharia personalizadas. Com nossa experiência e compromisso
+                com a inovação, garantimos resultados de engenharia sólidos e
+                eficazes que impulsionam o sucesso de cada empreendimento.
+              </p>
             </div>
           </div>
-          <div class="accordion-item">
-            <h4 class="accordion-header">
-              <button
-                id="instalacaoOutros"
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFive"
-                aria-expanded="false"
-                aria-controls="collapseFive"
-              >
-                <i class="bi bi-door-closed-fill mx-2"></i>
-                Instalação de Portas, Janelas e Outros
-              </button>
-            </h4>
-            <div
-              id="collapseFive"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionServices"
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header">
+            <button
+              id="instalacaoOutros"
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
             >
-              <div class="accordion-body">
-                <p>
-                  Realizamos a montagem precisa de portas, janelas, tetos e
-                  outros componentes, garantindo qualidade excepcional e
-                  durabilidade. Exemplos incluem a instalação de portas de
-                  segurança para residências, janelas eficientes em termos
-                  energéticos e tetos decorativos que transformam ambientes.
-                  Contamos com a experiência necessária para tornar sua visão de
-                  espaço uma realidade sólida e funcional, com detalhes que
-                  fazem a diferença.
-                </p>
-              </div>
+              <i class="bi bi-door-closed-fill mx-2"></i>
+              Instalação de Portas, Janelas e Outros
+            </button>
+          </h4>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionServices"
+          >
+            <div class="accordion-body">
+              <p>
+                Realizamos a montagem precisa de portas, janelas, tetos e outros
+                componentes, garantindo qualidade excepcional e durabilidade.
+                Exemplos incluem a instalação de portas de segurança para
+                residências, janelas eficientes em termos energéticos e tetos
+                decorativos que transformam ambientes. Contamos com a
+                experiência necessária para tornar sua visão de espaço uma
+                realidade sólida e funcional, com detalhes que fazem a
+                diferença.
+              </p>
             </div>
           </div>
-          <div class="accordion-item">
-            <h4 class="accordion-header">
-              <button
-                id="gesso"
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseSix"
-                aria-expanded="false"
-                aria-controls="collapseSix"
-              >
-                <i class="bi bi-shield-fill-check mx-2"></i>
-                Acabamento em Gesso
-              </button>
-            </h4>
-            <div
-              id="collapseSix"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionServices"
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header">
+            <button
+              id="gesso"
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
             >
-              <div class="accordion-body">
-                <p>
-                  Realizamos instalações de sancas, forros, molduras e outros
-                  elementos em gesso que transformam espaços com elegância e
-                  sofisticação. Exemplos incluem a criação de sancas iluminadas
-                  para iluminação ambiente, forros acústicos que melhoram o
-                  conforto e molduras decorativas que acrescentam beleza aos
-                  interiores.
-                </p>
-              </div>
+              <i class="bi bi-shield-fill-check mx-2"></i>
+              Acabamento em Gesso
+            </button>
+          </h4>
+          <div
+            id="collapseSix"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionServices"
+          >
+            <div class="accordion-body">
+              <p>
+                Realizamos instalações de sancas, forros, molduras e outros
+                elementos em gesso que transformam espaços com elegância e
+                sofisticação. Exemplos incluem a criação de sancas iluminadas
+                para iluminação ambiente, forros acústicos que melhoram o
+                conforto e molduras decorativas que acrescentam beleza aos
+                interiores.
+              </p>
             </div>
           </div>
-          <div class="accordion-item">
-            <h4 class="accordion-header">
-              <button
-                id="pinturas"
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseSeven"
-                aria-expanded="false"
-                aria-controls="collapseSeven"
-              >
-                <i class="bi bi-hammer mx-2"></i>
-                Serviços de Pinturas
-              </button>
-            </h4>
-            <div
-              id="collapseSeven"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionServices"
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header">
+            <button
+              id="pinturas"
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven"
+              aria-expanded="false"
+              aria-controls="collapseSeven"
             >
-              <div class="accordion-body">
-                <p>
-                  Fornecemos serviços de pintura excepcionais que transformam
-                  espaços com cores e acabamentos impressionantes. Realizamos
-                  pintura interna e externa, atendendo a residências e empresas.
-                  Exemplos incluem a pintura de interiores que cria atmosferas
-                  acolhedoras, fachadas externas que proporcionam uma primeira
-                  impressão impactante e acabamentos personalizados que destacam
-                  a singularidade de cada espaço. Com nossa perícia em pintura,
-                  garantimos que sua propriedade seja uma obra-prima de cores e
-                  beleza.
-                </p>
-              </div>
+              <i class="bi bi-hammer mx-2"></i>
+              Serviços de Pinturas
+            </button>
+          </h4>
+          <div
+            id="collapseSeven"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionServices"
+          >
+            <div class="accordion-body">
+              <p>
+                Fornecemos serviços de pintura excepcionais que transformam
+                espaços com cores e acabamentos impressionantes. Realizamos
+                pintura interna e externa, atendendo a residências e empresas.
+                Exemplos incluem a pintura de interiores que cria atmosferas
+                acolhedoras, fachadas externas que proporcionam uma primeira
+                impressão impactante e acabamentos personalizados que destacam a
+                singularidade de cada espaço. Com nossa perícia em pintura,
+                garantimos que sua propriedade seja uma obra-prima de cores e
+                beleza.
+              </p>
             </div>
           </div>
-          <div class="accordion-item">
-            <h4 class="accordion-header">
-              <button
-                id="alvenaria"
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseEight"
-                aria-expanded="false"
-                aria-controls="collapseEight"
-              >
-                <i class="bi bi-bricks mx-2"></i>
-                Obras de Alvenaria
-              </button>
-            </h4>
-            <div
-              id="collapseEight"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionServices"
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header">
+            <button
+              id="alvenaria"
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseEight"
+              aria-expanded="false"
+              aria-controls="collapseEight"
             >
-              <div class="accordion-body">
-                <p>
-                  Realizamos construções de paredes, muros, fundações e muito
-                  mais, com foco em durabilidade e resistência. Exemplos incluem
-                  a construção de muros de contenção que asseguram a
-                  estabilidade do terreno, paredes internas que dividem espaços
-                  com eficiência e fundações sólidas que sustentam edifícios com
-                  segurança.
-                </p>
-              </div>
+              <i class="bi bi-bricks mx-2"></i>
+              Obras de Alvenaria
+            </button>
+          </h4>
+          <div
+            id="collapseEight"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionServices"
+          >
+            <div class="accordion-body">
+              <p>
+                Realizamos construções de paredes, muros, fundações e muito
+                mais, com foco em durabilidade e resistência. Exemplos incluem a
+                construção de muros de contenção que asseguram a estabilidade do
+                terreno, paredes internas que dividem espaços com eficiência e
+                fundações sólidas que sustentam edifícios com segurança.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="identidadeEmpresarial" class="p-4 my-4">
+      <section id="identidadeEmpresarial">
         <div>
-          <h3 class="mb-0">Missão</h3>
-          <p class="m-0 px-0 pt-2 pb-4">
+          <h3>Missão</h3>
+          <p>
             Criar ambientes excepcionais, transformando visões em realidade.
             Estamos comprometidos em oferecer serviços de construção de alta
             qualidade, pintura, elétrica, gesso, alvenaria e muito mais, que
@@ -545,8 +499,8 @@
           </p>
         </div>
         <div>
-          <h3 class="mb-0">Visão</h3>
-          <p class="m-0 px-0 pt-2 pb-4">
+          <h3>Visão</h3>
+          <p>
             Ser a empresa de referência em construção civil, pintura e serviços
             afins, reconhecida pela excelência e compromisso com a satisfação
             dos clientes. Visamos crescer de forma sustentável e ser modelo de
@@ -554,8 +508,8 @@
           </p>
         </div>
         <div>
-          <h3 class="mb-0">Valores</h3>
-          <ul class="pt-2 px-0 m-0 pb-4">
+          <h3>Valores</h3>
+          <ul>
             <li>
               <p>
                 <strong>Compromisso com o Cliente</strong> - Colocamos os
@@ -629,7 +583,7 @@
         </svg>
       </div>
       <section
-        class="socio d-flex flex-column justify-content-between align-items-center gap-4 py-5"
+        class="d-flex flex-column justify-content-between align-items-center gap-4 py-5"
         id="socio"
       >
         <div class="d-flex flex-column align-items-center">
@@ -645,6 +599,7 @@
           </p>
         </div>
         <iframe
+          title="Localizcao da Empresa"
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d117046.9492374609!2d-46.37207600000001!3d-23.542673099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1694723508891!5m2!1spt-BR!2sbr"
           class="borda"
           allowfullscreen=""
