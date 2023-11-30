@@ -91,9 +91,15 @@ main {
     max-width: 800px;
     margin: auto;
 
+    h3 {
+      color: $primaryWhite !important;
+    }
+
     img {
       display: block;
       width: 100%;
+      max-width: 800px;
+      max-height: 600px;
     }
   }
 
@@ -132,6 +138,11 @@ footer {
 
     a {
       color: $primaryBlue;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
     }
   }
 }

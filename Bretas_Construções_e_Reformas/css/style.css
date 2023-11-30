@@ -54,9 +54,13 @@ main {
   main section:nth-child(2) {
     max-width: 800px;
     margin: auto; }
+    main section:nth-child(2) h3 {
+      color: #ffffff !important; }
     main section:nth-child(2) img {
       display: block;
-      width: 100%; }
+      width: 100%;
+      max-width: 800px;
+      max-height: 600px; }
   main section:nth-child(4) {
     display: flex;
     flex-direction: column;
@@ -81,6 +85,9 @@ footer section:last-child {
     aspect-ratio: 1; }
   footer section:last-child a {
     color: #112d4e; }
+  footer section:last-child svg {
+    width: 20px;
+    height: 20px; }
 
 @media (min-width: 768px) {
   footer section:nth-child(2) {
