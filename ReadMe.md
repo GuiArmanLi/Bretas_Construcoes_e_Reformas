@@ -1,7 +1,7 @@
 # Projeto "Bretas_Construções_e_Reformas"
 
 O projeto se concentra na criação de um site empresárial para o cliente
-[Link do Projeto] (https://bretas-construcoes.vercel.app/)
+https://bretas-construcoes.vercel.app/
 
 ## Tecnologias Utilizadas
 
